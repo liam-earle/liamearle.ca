@@ -2,14 +2,15 @@ import './App.css';
 import TypeAnimation from 'react-type-animation';
 import FadeIn from 'react-fade-in';
 import { IconButton } from '@mui/material';
-import { Delete, FileCopy, GitHub, Instagram, LinkedIn } from '@mui/icons-material';
+import { Delete, Email, FileCopy, GitHub, Instagram, LinkedIn } from '@mui/icons-material';
 import { Row } from 'react-bootstrap';
 
 const links = {
 	LinkedIn: "https://www.linkedin.com/in/liam-earle-98b553185/",
 	GitHub: "https://github.com/liam-earle",
 	Instagram: "https://www.instagram.com/liam__earle/",
-	Resume: "https://docs.google.com/document/d/1Zg0EGHzSAhJuLbWStrRsX4vPFhEMADBE8PNLxbaoM0c/edit"
+	Resume: "https://docs.google.com/document/d/1Zg0EGHzSAhJuLbWStrRsX4vPFhEMADBE8PNLxbaoM0c/edit",
+    Email: "mailto:me@liamearle.ca"
 }
 
 export default function App() {
@@ -36,17 +37,23 @@ export default function App() {
 				</FadeIn>
 				<FadeIn delay={12000}>
 					<Row>
-						<IconButton aria-label="delete" size="large" href={links.LinkedIn}>
+						<IconButton size="large" href={links.LinkedIn}>
   							<LinkedIn htmlColor='#FFFFFF' fontSize="inherit"/>
 						</IconButton>
-						<IconButton aria-label="delete" size="large" href={links.GitHub}>
+						<IconButton size="large" href={links.GitHub}>
   							<GitHub htmlColor='#FFFFFF' fontSize="inherit"/>
 						</IconButton>
-						<IconButton aria-label="delete" size="large" href={links.Instagram}>
+						<IconButton size="large" href={links.Instagram}>
   							<Instagram htmlColor='#FFFFFF' fontSize="inherit"/>
 						</IconButton>
-						<IconButton aria-label="delete" size="large" href={links.Resume}>
+						<IconButton size="large" href={links.Resume}>
   							<FileCopy htmlColor='#FFFFFF' fontSize="inherit"/>
+						</IconButton>
+                        <IconButton size="large" href={links.Resume}>
+  							<FileCopy htmlColor='#FFFFFF' fontSize="inherit"/>
+						</IconButton>
+                        <IconButton size="large" href={links.Email}>
+  							<Email htmlColor='#FFFFFF' fontSize="inherit"/>
 						</IconButton>
 					</Row>
 				</FadeIn>
