@@ -33,7 +33,7 @@ export default function App() {
 					/>
 				</FadeIn>
 				<FadeIn delay={4000}>
-					<div className='infoText'>I'm a Computer Engineering Major at MUN expecting to graduate in 2025. Currently, I'm working as a Full-Stack Developer at Bluedrop ISM. I'm proficient in Dart, C++, C#, Java, JavaScript, and Python. Below you can find links to my LinkedIn, GitHub, Photography Instagram, Resume and E-Mail at which you can reach me.</div>
+					<div className='infoText'>I'm a Computer Engineering Major at MUN expecting to graduate in 2025. Currently, I'm working as a Full-Stack Developer at <a href='https://bluedropism.com/' className='App-link'><b>Bluedrop ISM</b></a>. I'm proficient in Dart, C++, C#, Java, JavaScript, and Python. Below you can find links to my LinkedIn, GitHub, Photography Instagram, Resume and E-Mail at which you can reach me.</div>
 				</FadeIn>
 				<FadeIn delay={5000}>
 					<Row>
