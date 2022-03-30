@@ -22,20 +22,20 @@ export default function App() {
 					<TypeAnimation
 						cursor={true}
 						sequence={[
-							3000,
+							1000,
 							'Hi there,',
-							3000,
+							1000,
 							'I\'m Liam',
-							3000
+							1000
 						]}
 						wrapper="header"
 						repeat={1}
 					/>
 				</FadeIn>
-				<FadeIn delay={10000}>
+				<FadeIn delay={4000}>
 					<div className='infoText'>I'm a Computer Engineering Major at MUN expecting to graduate in 2025. Currently, I'm working as a Full-Stack Developer at Bluedrop ISM. I'm proficient in Dart, C++, C#, Java, JavaScript, and Python. Below you can find links to my LinkedIn, GitHub, Photography Instagram, Resume and E-Mail at which you can reach me.</div>
 				</FadeIn>
-				<FadeIn delay={12000}>
+				<FadeIn delay={5000}>
 					<Row>
 						<IconButton size="large" href={links.LinkedIn}>
   							<LinkedIn htmlColor='#FFFFFF' fontSize="inherit"/>
