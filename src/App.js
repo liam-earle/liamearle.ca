@@ -10,7 +10,7 @@ const links = {
 	GitHub: "https://github.com/liam-earle",
 	Instagram: "https://www.instagram.com/liam__earle/",
 	Resume: "https://docs.google.com/document/d/1Zg0EGHzSAhJuLbWStrRsX4vPFhEMADBE8PNLxbaoM0c/edit",
-    Email: "mailto:me@liamearle.ca"
+	Email: "mailto:me@liamearle.ca"
 }
 
 export default function App() {
@@ -49,10 +49,7 @@ export default function App() {
 						<IconButton size="large" href={links.Resume}>
   							<FileCopy htmlColor='#FFFFFF' fontSize="inherit"/>
 						</IconButton>
-                        <IconButton size="large" href={links.Resume}>
-  							<FileCopy htmlColor='#FFFFFF' fontSize="inherit"/>
-						</IconButton>
-                        <IconButton size="large" href={links.Email}>
+						<IconButton size="large" href={links.Email}>
   							<Email htmlColor='#FFFFFF' fontSize="inherit"/>
 						</IconButton>
 					</Row>
