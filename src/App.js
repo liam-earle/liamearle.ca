@@ -9,7 +9,7 @@ const links = {
 	LinkedIn: "https://www.linkedin.com/in/liam-earle-98b553185/",
 	GitHub: "https://github.com/liam-earle",
 	Instagram: "https://www.instagram.com/liam__earle/",
-	Resume: "https://docs.google.com/document/d/1Zg0EGHzSAhJuLbWStrRsX4vPFhEMADBE8PNLxbaoM0c/edit",
+	Resume: "https://liamearle.ca/resume/",
 	Email: "mailto:me@liamearle.ca"
 }
 
