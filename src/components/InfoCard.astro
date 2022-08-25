@@ -1,0 +1,9 @@
+---
+const { subject, subjectLink } = Astro.props
+---
+<div class="block p-6 max-w-4xl w-full bg-gray-900 rounded-lg border border-gray-800 shadow-md">
+	<a class="mb-2 text-4xl font-code-font font-bold tracking-tight text-gray-200" href={subjectLink}>{subject}</a>
+	<div class="font-code-font text-2xl text-gray-200 drop-shadow-lg">
+		<slot />
+	</div>
+</div>

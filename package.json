@@ -1,47 +1,23 @@
 {
-  "name": "liamearle.ca",
-  "version": "0.1.0",
-  "private": false,
-  "dependencies": {
-    "@emotion/react": "^11.8.2",
-    "@emotion/styled": "^11.8.1",
-    "@mui/icons-material": "^5.5.1",
-    "@mui/material": "^5.5.3",
-    "@testing-library/jest-dom": "^5.16.3",
-    "@testing-library/react": "^12.1.4",
-    "@testing-library/user-event": "^13.5.0",
-    "bootstrap": "^4.0.0",
-    "react": "^17.0.2",
-    "react-bootstrap": "^2.2.2",
-    "react-dom": "^17.0.2",
-    "react-fade-in": "^2.0.1",
-    "react-scripts": "5.0.0",
-    "react-type-animation": "^1.1.2",
-    "web-vitals": "^2.1.4",
-    "webfontloader": "^1.6.28"
-  },
+  "name": "@example/basics",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "devDependencies": {
+    "@astrojs/react": "^1.0.0",
+    "@astrojs/tailwind": "^1.0.0",
+    "astro": "^1.0.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "framer-motion": "^7.2.1",
+    "react-type-animation": "^2.1.0"
   }
 }
