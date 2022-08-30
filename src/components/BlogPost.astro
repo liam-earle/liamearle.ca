@@ -1,0 +1,22 @@
+---
+import { TypeAnimation } from 'react-type-animation';
+const { subject, subjectLink, cursor, postDate } = Astro.props
+---
+<div class="block p-6 max-w-4xl w-full bg-gray-900 rounded-lg border border-gray-800 shadow-md">
+	<a class="mb-2 text-2xl font-code-font font-bold tracking-tight text-gray-200" href={subjectLink}>
+		<TypeAnimation
+			client:load
+			sequence={[
+				subject,
+			]}
+			wrapper="div"
+			cursor={cursor}
+		/>
+	</a>
+	<div class="font-code-font text-lg text-gray-200 drop-shadow-lg">
+		<slot />
+	</div>
+	<a class="mb-2 text-md font-code-font font-bold tracking-tight text-gray-400">
+		{postDate}
+	</a>
+</div>
