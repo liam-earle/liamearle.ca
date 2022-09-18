@@ -56,7 +56,7 @@ export const Navbar = () => {
 							</a>
 						</motion.div>
 						<motion.div className="py-2"whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
-							<a href="https://liamearle.ca/resume" className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-900 hover:text-white `}>
+							<a href="https://liam-earle.github.io/resume/" className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-900 hover:text-white `}>
 								Resume
 							</a>
 						</motion.div>
