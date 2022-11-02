@@ -38,23 +38,13 @@ export const Navbar = () => {
 							viewBox='0 0 24 24'
 							xmlns='http://www.w3.org/2000/svg'
 						>
-							<NavbarHamburger isOpen={active}/>
+							{/* <NavbarHamburger isOpen={active}/> */}
 						</svg>
 					</button>
 				</motion.div>
 				{/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
-				<div className={`${active ? '' : 'hidden'}   w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
+				<div className={` lg:inline-flex lg:flex-grow lg:w-auto`}>
 					<div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto'>
-						<motion.div className="py-2"whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
-							<a href="/" className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-900 hover:text-white `}>
-								Home
-							</a>
-						</motion.div>
-						<motion.div className="py-2"whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
-							<a href="/projects" className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-900 hover:text-white `}>
-								Projects
-							</a>
-						</motion.div>
 						<motion.div className="py-2"whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
 							<a href="https://liam-earle.github.io/resume/" className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-900 hover:text-white `}>
 								Resume
