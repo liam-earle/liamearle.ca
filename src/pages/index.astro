@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ExperienceCard from '../components/ExperienceCard.astro';
 import fovporgImg from '../content/fovp_org.png';
 import localmeImg from '../content/localme.png';
 import personalSiteImg from '../content/personalsite.png';
@@ -44,91 +45,15 @@ import fmuntenthImg from '../content/fmuntenth.png';
 				</button>
 			</div>
 		</div>
-		<div class="py-4 text-4xl font-bold">
-			Professional Experience
-		</div>
-		<div class="max-w-4xl rounded-lg border shadow-md bg-gray-800 border-black">
-			<a href="https://bluedropism.com/">
-				<img class="rounded-t-lg" src={bluedropISMImg} alt="" />
-			</a>
-			<div class="p-5">
-				<a href="#">
-					<h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Bluedrop ISM </h5>
-				</a>
-				<p class="mb-3 font-normal text-gray-400">Full-Stack Engineer with Experience doing both backend and frontend development using modern tools. Working with modern tools such as PostgreSQL, React, AngularJS, and Node.JS. Experience doing extensive unit and integration testing.</p>
-			</div>
-		</div>
-		<div class="max-w-4xl rounded-lg border shadow-md bg-gray-800 border-black">
-			<a href="https://retrievium.ca">
-				<img class="rounded-t-lg" src={retrieviumImg} alt="" />
-			</a>
-			<div class="p-5">
-				<a href="#">
-					<h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Retrievium</h5>
-				</a>
-				<p class="mb-3 font-normal text-gray-400">Retrievium is a data-management and modeling platform for predictive analytics in chemical sciences – the GitHub of chemistry. It allows you to share, search, and discover research data in various fields of chemistry. Unlike traditional data management or molecular modeling tools, the platform harnesses a global network of users, data, and machine-learning technology that allows people to discover, apply, or develop high-accuracy models quickly. Built using Remix (TypeScript), FastAPI (Python), and PostgreSQL.</p>
-			</div>
-		</div>
-		<div class="max-w-4xl rounded-lg border shadow-md bg-gray-800 border-black">
-			<a href="https://test.fovp.org/">
-				<img class="rounded-t-lg" src={fovporgImg} alt="" />
-			</a>
-			<div class="p-5">
-				<a href="#">
-					<h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Friends of Victoria Park Website</h5>
-				</a>
-				<p class="mb-3 font-normal text-gray-400">Website redesign done for the Friends of Victoria Park in St. John's, NL. Website is built using NextJS, TailwindCSS for styling, and Framer Motion for Animations. Future plans for the site include online Day Camp Registration REST API where completed forms are converted to Google Doc on finalization of payment using Square's Online Payment API.</p>
-			</div>
-		</div>
-		<div class="py-4 text-4xl font-bold">
-			Extra Curricular Experience
-		</div>
-		<div class="max-w-4xl rounded-lg border shadow-md bg-gray-800 border-black">
-			<a href="https://memorialbaja.ca/">
-				<img class="rounded-t-lg" src={memorialBajaImg} alt="" />
-			</a>
-			<div class="p-5">
-				<a href="#">
-					<h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Memorial Baja (Software Team Lead)</h5>
-				</a>
-				<p class="mb-3 font-normal text-gray-400">Software Lead for Memorial Baja. Architected Team Site and vehichle dashboard and gauge cluter utilizing technologies such as AstroJS, ReactJS, TailwindCSS, NextJS, RaspberryPi, etc.</p>
-			</div>
-		</div>
-		<div class="max-w-4xl rounded-lg border shadow-md bg-gray-800 border-black">
-			<a href="https://fmuntenth.com/">
-				<img class="rounded-t-lg" src={fmuntenthImg} alt="" />
-			</a>
-			<div class="p-5">
-				<a href="#">
-					<h5 class="mb-2 text-2xl font-bold tracking-tight text-white">FMUNTenth</h5>
-				</a>
-				<p class="mb-3 font-normal text-gray-400">Worked with the team to architect a team website. Utilized technologies such as AstroJS, ReactJS, and TailwindCSS.</p>
-			</div>
-		</div>
-		<div class="py-4 text-4xl font-bold">
-			Personal Experience
-		</div>
-		<div class="max-w-4xl rounded-lg border shadow-md bg-gray-800 border-black">
-			<a href="#">
-				<img class="rounded-t-lg" src={localmeImg} alt="" />
-			</a>
-			<div class="p-5">
-				<a href="https://github.com/LocalMe-Social">
-					<h5 class="mb-2 text-2xl font-bold tracking-tight text-white">LocalMe</h5>
-				</a>
-				<p class="mb-3 font-normal text-gray-400">Started working on an app in high school which has continued to this day! Am working to create a social media platform and rewards platform using Dart and Flutter for the Frontend and Firebase for the database. Current plans for the project include a complete rewrite for the backend to create REST API using NodeJS, Prisma, Express, and PostgreSQL. There are also plans to create a Web App, although, the tech for this has not been chosen yet.</p>
-			</div>
-		</div>
-		<div class="max-w-4xl rounded-lg border shadow-md bg-gray-800 border-black">
-			<a href="#">
-				<img class="rounded-t-lg" src={personalSiteImg} alt="" />
-			</a>
-			<div class="p-5">
-				<a href="https://github.com/liam-earle/liamearle.ca">
-					<h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Personal Site</h5>
-				</a>
-				<p class="mb-3 font-normal text-gray-400">Personal Website built using AstroJS, ReactJS, and TailwindCSS. Currently, it displays a short bio, my resume, active projects, and past school projects.</p>
-			</div>
-		</div>
+		<div class="py-4 text-4xl font-bold">Professional Experience</div>
+		<ExperienceCard image={bluedropISMImg} title="Bluedrop ISM" desc="Full-Stack Engineer with Experience doing both backend and frontend development using modern tools. Working with modern tools such as PostgreSQL, React, AngularJS, and Node.JS. Experience doing extensive unit and integration testing." />
+		<ExperienceCard image={retrieviumImg} title="Retrievium" desc="Retrievium is a data-management and modeling platform for predictive analytics in chemical sciences – the GitHub of chemistry. It allows you to share, search, and discover research data in various fields of chemistry. Unlike traditional data management or molecular modeling tools, the platform harnesses a global network of users, data, and machine-learning technology that allows people to discover, apply, or develop high-accuracy models quickly. Built using Remix (TypeScript), FastAPI (Python), and PostgreSQL." />
+		<ExperienceCard image={fovporgImg} title="Friends of Victoria Park Website" desc="Website redesign done for the Friends of Victoria Park in St. John's, NL. Website is built using NextJS, TailwindCSS for styling, and Framer Motion for Animations. Future plans for the site include online Day Camp Registration REST API where completed forms are converted to Google Doc on finalization of payment using Square's Online Payment API." />
+		<div class="py-4 text-4xl font-bold">Extra Curricular Experience</div>
+		<ExperienceCard image={memorialBajaImg} title="Memorial Baja (Software Engineering Lead)" desc="Software Lead for Memorial Baja. Architected Team Site and vehichle dashboard and gauge cluter utilizing technologies such as AstroJS, ReactJS, TailwindCSS, NextJS, RaspberryPi, etc." />
+		<ExperienceCard image={fmuntenthImg} title="FMUNTenth" desc="Worked with the team to architect a team website. Utilized technologies such as AstroJS, ReactJS, and TailwindCSS." />
+		<div class="py-4 text-4xl font-bold">Personal Experience</div>
+		<ExperienceCard image={localmeImg} title="LocalMe" desc="Started working on an app in high school which has continued to this day! Am working to create a social media platform and rewards platform using Dart and Flutter for the Frontend and Firebase for the database. Current plans for the project include a complete rewrite for the backend to create REST API using NodeJS, Prisma, Express, and PostgreSQL. There are also plans to create a Web App, although, the tech for this has not been chosen yet."/>
+		<ExperienceCard image={personalSiteImg} title="Personal Site" desc="Personal Website built using AstroJS, ReactJS, and TailwindCSS. Currently, it displays a short bio, my resume, active projects, and past school projects." />
 	</div>
 </Layout>

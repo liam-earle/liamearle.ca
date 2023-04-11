@@ -1,0 +1,14 @@
+---
+const { image, title, desc } = Astro.props
+---
+<div class="max-w-4xl rounded-lg border shadow-md bg-gray-800 border-black">
+	<a href="#">
+		<img class="rounded-t-lg" src={image} alt="" />
+	</a>
+	<div class="p-5">
+		<a href="https://github.com/liam-earle/liamearle.ca">
+			<h5 class="mb-2 text-2xl font-bold tracking-tight text-white">{title}</h5>
+		</a>
+		<p class="mb-3 font-normal text-gray-400">{desc}</p>
+	</div>
+</div>
