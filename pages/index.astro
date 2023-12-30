@@ -1,0 +1,126 @@
+---
+import { Image } from 'astro:assets';
+import NavBar from '../components/NavBar.astro';
+import Footer from '../components/Footer.astro';
+import ExperienceCard from '../components/ExperienceCard.astro';
+import SkillTag from '../components/SkillTag.astro';
+
+import profile from '../content/profile.jpg';
+import skillspass from '../content/skillspass.png';
+import retrievium from '../content/retrievium.png';
+import detechnologies from '../content/detechnologies.png';
+import fovp from '../content/fovp_org.png';
+import baja from '../content/memorialbaja.png';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+		<title>Astro</title>
+	</head>
+	<body class="bg-slate-700">
+		<NavBar />
+		<div id="home" class="flex items-center justify-center h-[40rem]">
+			<div class="max-w-[40rem] px-10">
+				<div class="text-cyan-400 text-xl font-bold">
+					Hi there, my name is
+				</div>
+				<div class="text-white text-6xl font-bold">
+					Liam Earle
+				</div>
+				<div class="text-cyan-400 text-3xl font-bold">
+					Computer Engineering Student
+				</div>
+				<div class="text-white">
+					I'm a Computer Engineering student at Memorial University of Newfoundland with strong interest and understanding of Full-Stack and Mobile Development.<br> Previously, I've worked as a Full-Stack Developer at Bluedrop ISM and done contract work for local organizations and research groups. I have skills in Dart (Flutter), C++, C#, Java, JavaScript (ReactJS, AngularJS, and NodeJS), Python and SQL (PostgreSQL).
+				</div>
+			</div>
+		</div>
+		<div id="who" class="flex justify-center bg-slate-800">
+			<div class="flex flex-col items-center py-10">
+				<div class="text-2xl text-white font-bold">Who Am I?</div>
+				<hr class="w-16 h-1 my-4 border-0 bg-gray-700">
+				<div class="relative mx-auto rounded-lg overflow-hidden">
+					<Image height={256} src={profile} alt="Profile" />
+				</div>
+				<div class="pt-4 px-5">
+					<div class="text-cyan-400 font-bold md:text-lg text-md">Bachelor of Engineering - Computer Engineering</div>
+					<div class="text-cyan-600 font-bold md:text-sm text-xs">Minor in Mathematics (Calculus & Discrete Mathematics)</div>
+					<ul class="list-disc list-inside text-white font-bold md:text-md text-sm">
+						<li>Academic Term 4 Student</li>
+						<li>Treasurer of IEEE Student Branch</li>
+						<li>Software Team Lead for Memorial Baja</li>
+						<li>MCS Subteam Member for MUNStar-1</li>
+						<li>Software Team Member for Paradigm Engineering</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="experience" class="flex justify-center bg-slate-700">
+			<div class="flex flex-col items-center py-10">
+				<div class="text-2xl text-white font-bold">Experience & Projects</div>
+				<hr class="w-16 h-1 my-4 border-0 bg-gray-500">
+				<div class="grid md:grid-cols-2 gap-20 px-20 xl:px-[30%]">
+					<ExperienceCard image={skillspass} title="Bluedrop ISM - Full-Stack Developer" desc="Full-Stack Engineer with Experience doing both backend and frontend development using modern tools. Working with modern tools such as PostgreSQL, React, AngularJS, and Node.JS. Experience doing extensive unit and integration testing." date="Jan 2022 - Aug 2022, May 2023 - Sept 2023, Jan 2024 - present">
+						<SkillTag skill="JavaScript"/>
+						<SkillTag skill="TypeScript"/>
+						<SkillTag skill="NodeJS"/>
+						<SkillTag skill="REST APIs"/>
+						<SkillTag skill="ReactJS"/>
+						<SkillTag skill="AngularJS"/>
+						<SkillTag skill="PostgreSQL"/>
+						<SkillTag skill="Unit-Testing"/>
+						<SkillTag skill="Jira"/>
+						<SkillTag skill="GitHub"/>
+						<SkillTag skill="Agile Development"/>
+					</ExperienceCard>
+					<ExperienceCard image={retrievium} title="Memorial University - Full-Stack Developer" desc="Retrievium is a data-management and modeling platform for predictive analytics in chemical sciences - the GitHub of chemistry. It allows you to share, search, and discover research data in various fields of chemistry. Unlike traditional data management or molecular modeling tools, the platform harnesses a global network of users, data, and machine-learning technology that allows people to discover, apply, or develop high-accuracy models quickly." date="Sept 2022 - Sept 2023">
+						<SkillTag skill="TypeScript"/>
+						<SkillTag skill="ReactJS"/>
+						<SkillTag skill="RemixJS"/>
+						<SkillTag skill="Python"/>
+						<SkillTag skill="FastAPI"/>
+						<SkillTag skill="REST APIs"/>
+						<SkillTag skill="PostgreSQL"/>
+						<SkillTag skill="GitHub"/>
+					</ExperienceCard>
+					<ExperienceCard image={detechnologies} title="DETechnologies - Software Consultant / Web Developer" desc="This project aims to contribute to the global research field regarding Rotating Detonation Rocket Engine (RDRE) development. RDREs have prospective applications as orbital maneuvering thrusters, staged launch vehicle propulsion and supersonic aircraft engines. The goal of this project is to build a modular, liquid cooled, RDRE capable of thrust up to 1000N." date="Aug 2023 - present">
+						<SkillTag skill="TypeScript"/>
+						<SkillTag skill="ReactJS"/>
+						<SkillTag skill="RemixJS"/>
+						<SkillTag skill="Python"/>
+						<SkillTag skill="FastAPI"/>
+						<SkillTag skill="REST APIs"/>
+						<SkillTag skill="PostgreSQL"/>
+						<SkillTag skill="GitHub"/>
+					</ExperienceCard>
+					<ExperienceCard image={fovp} title="Friends of Victoria Park - Web Developer" desc="Website redesign done for the Friends of Victoria Park in St. John's, NL. Website is built using NextJS, TailwindCSS for styling, and Framer Motion for Animations. Future plans for the site include online Day Camp Registration REST API where completed forms are converted to Google Doc on finalization of payment using Square's Online Payment API." date="June 2022">
+						<SkillTag skill="JavaScript"/>
+						<SkillTag skill="ReactJS"/>
+						<SkillTag skill="NextJS"/>
+						<SkillTag skill="TailwindCSS"/>
+						<SkillTag skill="GitHub"/>
+					</ExperienceCard>
+					<ExperienceCard image={baja} title="Memorial Baja - Software Engineering Lead" desc="Software Lead for Memorial Baja. Architected Team Site and vehichle dashboard and gauge cluter utilizing technologies such as AstroJS, ReactJS, TailwindCSS, C, OpenGL, RayLib, RaspberryPi, etc." date="Dec 2022 - present">
+						<SkillTag skill="JavaScript"/>
+						<SkillTag skill="ReactJS"/>
+						<SkillTag skill="AstroJS"/>
+						<SkillTag skill="TailwindCSS"/>
+						<SkillTag skill="C"/>
+						<SkillTag skill="OpenGL"/>
+						<SkillTag skill="RayLib"/>
+						<SkillTag skill="RaspberryPi"/>
+						<SkillTag skill="GitHub"/>
+					</ExperienceCard>
+				</div>
+			</div>
+		</div>	
+		<Footer />	
+	</body>
+</html>
