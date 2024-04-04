@@ -1,0 +1,18 @@
+---
+interface Props {
+	title: string;
+	desc: string;
+	date?: string;
+	link?: string;
+}
+
+const { title, desc, date, link } = Astro.props;
+---
+<div class="max-w-[100rem]">
+	<a href={link} class="text-cyan-400 font-bold text-lg pt-2">{title}</a>
+	<div class="text-gray-400 text-sm">{date}</div>
+	<div class="text-white">{desc}</div>
+	<div class="flex flex-wrap pt-2">
+		<slot />
+	</div>
+</div>

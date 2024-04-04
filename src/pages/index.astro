@@ -8,9 +8,13 @@ import SkillTag from '../components/SkillTag.astro';
 import profile from '../content/profile.jpg';
 import skillspass from '../content/skillspass.png';
 import retrievium from '../content/retrievium.png';
-import detechnologies from '../content/detechnologies.png';
-import fovp from '../content/fovp_org.png';
-import baja from '../content/memorialbaja.png';
+import detechnologies from '../content/detechnologies.gif';
+import fovp from '../content/fovp.png';
+import baja from '../content/baja.png';
+import copper from '../content/copper.png';
+import paradigm from '../content/paradigm.png';
+import munstar from '../content/munstar.png';
+import CourseCard from '../components/CourseCard.astro';
 ---
 
 <html lang="en">
@@ -65,8 +69,8 @@ import baja from '../content/memorialbaja.png';
 			<div class="flex flex-col items-center py-10">
 				<div class="text-2xl text-white font-bold">Experience & Projects</div>
 				<hr class="w-16 h-1 my-4 border-0 bg-gray-500">
-				<div class="grid md:grid-cols-2 gap-20 px-20 xl:px-[30%]">
-					<ExperienceCard image={skillspass} title="Bluedrop ISM - Full-Stack Developer" desc="Full-Stack Engineer with Experience doing both backend and frontend development using modern tools. Working with modern tools such as PostgreSQL, React, AngularJS, and Node.JS. Experience doing extensive unit and integration testing." date="Jan 2022 - Aug 2022, May 2023 - Sept 2023, Jan 2024 - present">
+				<div class="grid md:grid-cols-2 gap-20 px-20 xl:px-[20%]">
+					<ExperienceCard image={skillspass} link="http://bluedropism.com/" title="Bluedrop ISM - Full-Stack Developer" desc="Full-Stack Engineer with Experience doing both backend and frontend development using modern tools. Working with modern tools such as PostgreSQL, React, AngularJS, and Node.JS. Experience doing extensive unit and integration testing." date="Jan 2022 - Aug 2022, May 2023 - Sept 2023, Jan 2024 - present">
 						<SkillTag skill="JavaScript"/>
 						<SkillTag skill="TypeScript"/>
 						<SkillTag skill="NodeJS"/>
@@ -79,7 +83,7 @@ import baja from '../content/memorialbaja.png';
 						<SkillTag skill="GitHub"/>
 						<SkillTag skill="Agile Development"/>
 					</ExperienceCard>
-					<ExperienceCard image={retrievium} title="Memorial University - Full-Stack Developer" desc="Retrievium is a data-management and modeling platform for predictive analytics in chemical sciences - the GitHub of chemistry. It allows you to share, search, and discover research data in various fields of chemistry. Unlike traditional data management or molecular modeling tools, the platform harnesses a global network of users, data, and machine-learning technology that allows people to discover, apply, or develop high-accuracy models quickly." date="Sept 2022 - Sept 2023">
+					<ExperienceCard image={retrievium} link="https://retrievium.ca/" title="Memorial University - Full-Stack Developer" desc="Retrievium is a data-management and modeling platform for predictive analytics in chemical sciences - the GitHub of chemistry. It allows you to share, search, and discover research data in various fields of chemistry. Unlike traditional data management or molecular modeling tools, the platform harnesses a global network of users, data, and machine-learning technology that allows people to discover, apply, or develop high-accuracy models quickly." date="Sept 2022 - Sept 2023">
 						<SkillTag skill="TypeScript"/>
 						<SkillTag skill="ReactJS"/>
 						<SkillTag skill="RemixJS"/>
@@ -89,7 +93,17 @@ import baja from '../content/memorialbaja.png';
 						<SkillTag skill="PostgreSQL"/>
 						<SkillTag skill="GitHub"/>
 					</ExperienceCard>
-					<ExperienceCard image={detechnologies} title="DETechnologies - Software Consultant / Web Developer" desc="This project aims to contribute to the global research field regarding Rotating Detonation Rocket Engine (RDRE) development. RDREs have prospective applications as orbital maneuvering thrusters, staged launch vehicle propulsion and supersonic aircraft engines. The goal of this project is to build a modular, liquid cooled, RDRE capable of thrust up to 1000N." date="Aug 2023 - present">
+					<ExperienceCard image={copper} link="https://github.com/copper-social/copper" title="Copper Social" desc="Copper is a platform that allows users to create and join chat rooms to communicate with others. It is a combination of Discord and Instagram with some features from other platforms included." date="Jan 2024 - April 2024">
+						<SkillTag skill="TypeScript"/>
+						<SkillTag skill="ReactJS"/>
+						<SkillTag skill="Remix"/>
+						<SkillTag skill="ExpressJS"/>
+						<SkillTag skill="JWT"/>
+						<SkillTag skill="REST APIs"/>
+						<SkillTag skill="SQLite"/>
+						<SkillTag skill="GitHub"/>
+					</ExperienceCard>
+					<ExperienceCard image={detechnologies} link="https://detechnologies.ca/" title="DETechnologies - Software Consultant" desc="This project aims to contribute to the global research field regarding Rotating Detonation Rocket Engine (RDRE) development. RDREs have prospective applications as orbital maneuvering thrusters, staged launch vehicle propulsion and supersonic aircraft engines. The goal of this project is to build a modular, liquid cooled, RDRE capable of thrust up to 1000N." date="Aug 2023 - present">
 						<SkillTag skill="TypeScript"/>
 						<SkillTag skill="ReactJS"/>
 						<SkillTag skill="RemixJS"/>
@@ -99,14 +113,14 @@ import baja from '../content/memorialbaja.png';
 						<SkillTag skill="PostgreSQL"/>
 						<SkillTag skill="GitHub"/>
 					</ExperienceCard>
-					<ExperienceCard image={fovp} title="Friends of Victoria Park - Web Developer" desc="Website redesign done for the Friends of Victoria Park in St. John's, NL. Website is built using NextJS, TailwindCSS for styling, and Framer Motion for Animations. Future plans for the site include online Day Camp Registration REST API where completed forms are converted to Google Doc on finalization of payment using Square's Online Payment API." date="June 2022">
+					<ExperienceCard image={fovp} link="https://fovp.org/" title="Friends of Victoria Park - Web Developer" desc="Website redesign done for the Friends of Victoria Park in St. John's, NL. Website is built using NextJS, TailwindCSS for styling, and Framer Motion for Animations. Future plans for the site include online Day Camp Registration REST API where completed forms are converted to Google Doc on finalization of payment using Square's Online Payment API." date="June 2022">
 						<SkillTag skill="JavaScript"/>
 						<SkillTag skill="ReactJS"/>
 						<SkillTag skill="NextJS"/>
 						<SkillTag skill="TailwindCSS"/>
 						<SkillTag skill="GitHub"/>
 					</ExperienceCard>
-					<ExperienceCard image={baja} title="Memorial Baja - Software Engineering Lead" desc="Software Lead for Memorial Baja. Architected Team Site and vehichle dashboard and gauge cluter utilizing technologies such as AstroJS, ReactJS, TailwindCSS, C, OpenGL, RayLib, RaspberryPi, etc." date="Dec 2022 - present">
+					<ExperienceCard image={baja} link="https://memorialbaja.ca/" title="Memorial Baja - Software Engineering Lead" desc="Software Lead for Memorial Baja. Architected Team Site and vehichle dashboard and gauge cluter utilizing technologies such as AstroJS, ReactJS, TailwindCSS, C, OpenGL, RayLib, RaspberryPi, etc." date="Dec 2022 - present">
 						<SkillTag skill="JavaScript"/>
 						<SkillTag skill="ReactJS"/>
 						<SkillTag skill="AstroJS"/>
@@ -117,9 +131,30 @@ import baja from '../content/memorialbaja.png';
 						<SkillTag skill="RaspberryPi"/>
 						<SkillTag skill="GitHub"/>
 					</ExperienceCard>
+					<ExperienceCard image={paradigm} link="https://munparadigm.com" title="Paradigm Engineering" desc="Role consists mostly of support and consulting for students working on the team as well as mainting the team website." date="Sept 2023 - present">
+						<SkillTag skill="JavaScript"/>
+						<SkillTag skill="ReactJS"/>
+						<SkillTag skill="AstroJS"/>
+						<SkillTag skill="TailwindCSS"/>
+						<SkillTag skill="C++"/>
+						<SkillTag skill="Python"/>
+						<SkillTag skill="ROS2"/>
+						<SkillTag skill="Gazebo"/>
+						<SkillTag skill="Linux"/>
+						<SkillTag skill="GitHub"/>
+					</ExperienceCard>
+					<ExperienceCard image={munstar} link="https://munstar-1.com/" title="MUNStar-1" desc="Member of the Mission Control Subsystem Team and Web Developer for the MUNStar-1 Cubesat team. MUNStar-1 is a student design team based out of Memorial University, in Newfoundland. Its aim is to create a small satellite, called a CubeSat through the Canadian Space Agency's “CUBICS” Mission. The CubeSat is currently expected to launch in 2026." date="August 2023 - present">
+						<SkillTag skill="JavaScript"/>
+						<SkillTag skill="ReactJS"/>
+						<SkillTag skill="AstroJS"/>
+						<SkillTag skill="TailwindCSS"/>
+						<SkillTag skill="C"/>
+						<SkillTag skill="Linux"/>
+						<SkillTag skill="Yocto"/>
+					</ExperienceCard>
 				</div>
 			</div>
-		</div>	
+		</div>
 		<Footer />	
 	</body>
 </html>

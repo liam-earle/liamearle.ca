@@ -4,16 +4,17 @@ interface Props {
 	title: string;
 	desc: string;
 	date?: string;
+	link?: string;
 }
 
-const { image, title, desc, date } = Astro.props;
+const { image, title, desc, date, link } = Astro.props;
 
 import { Image } from 'astro:assets';
 
 ---
 <div class="max-w-[80rem]">
-	<Image height={256} src={image} alt="experience" />
-	<div class="text-cyan-400 font-bold text-lg pt-2">{title}</div>
+	<Image height={512} src={image} alt="experience" />
+	<a href={link} class="text-cyan-400 font-bold text-lg pt-2">{title}</a>
 	<div class="text-gray-400 text-sm">{date}</div>
 	<div class="text-white">{desc}</div>
 	<div class="flex flex-wrap pt-2">
