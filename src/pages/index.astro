@@ -1,0 +1,188 @@
+---
+import Sidebar from "../components/Sidebar.tsx";
+import FlashLight from "../components/FlashLight.tsx";
+import ExperienceCard from "../components/ExperienceCard.astro";
+import SkillTag from "../components/SkillTag.astro";
+import { Github, Linkedin, MoveUpRight } from "lucide-react";
+
+import copper from "../content/copper.png";
+import retrievium from "../content/retrievium.png";
+import bajaDash from "../content/baja.png";
+---
+
+<html lang="en" class="text-white font-roboto">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>liamearle.ca</title>
+	</head>
+	<body class="bg-navy h-screen">
+		<Sidebar client:only />
+		<FlashLight client:only />
+		<div class="lg:hidden block">
+			<div class="pt-16 pl-12 text-5xl font-bold">
+				Liam Earle
+			</div>
+			<div class="pt-4 pl-12 text-xl">
+				Computer Engineering Student
+			</div>
+			<div class="pt-4 px-12 text-gray-400">
+				I'm a Computer Engineering student at Memorial University of Newfoundland with a strong interest and understanding of Full-Stack and Mobile Development.
+			</div>
+			<div class="pt-10 flex flex-row space-x-5 text-sm justify-center">
+				<a href="https://www.linkedin.com/in/liam-earle-98b553185/" target=”_blank” class="opacity-50 hover:opacity-100">
+					<Linkedin />
+				</a>
+				<a href="https://github.com/liam-earle" target=”_blank” class="opacity-50 hover:opacity-100">
+					<Github />
+				</a>
+			</div>
+		</div>
+		<div id="about" class="lg:pl-[35%] px-12">
+			<div class="lg:pt-28 pt-14 lg:mx-40 justify-center text-gray-400 space-y-5">
+				<p>
+					I developed an interest in programming and computers at a young age, initially driven by a desire to create mods for my favorite video games. This passion led me to dedicate my teenage and early adult years to learning various web and mobile technologies. In high school, I started learning <a class="text-white hover:text-cyan-500" href="https://flutter.dev/">Flutter</a> during its alpha stage and explored backend development and cloud services with <a class="text-white hover:text-cyan-500" href="https://firebase.google.com/">Firebase</a>.
+				</p>
+				<p>
+					In 2020, I graduated high school and began pursuing a degree in Computer Engineering at <a class="text-white hover:text-cyan-500" href="https://www.mun.ca/">Memorial University of Newfoundland</a>. In 2022, I completed my first work term at <a class="text-white hover:text-cyan-500" href="https://bluedropism.com/">Bluedrop ISM</a> as a Full-Stack Developer. I decided to take some time off from school to continue working at Bluedrop, which helped me gain a deeper understanding of web development.
+				</p>
+				<p>
+					In August 2024, I joined <a class="text-white hover:text-cyan-500" href="https://www.aboutamazon.com/about-us">Amazon</a>'s Robotics division as a Software Development Engineer (Co-Op), where I work on web-based dashboards and services that provide important metrics for fulfillment centers.
+				</p>
+			</div>
+		</div>
+		<div id="experience" class="pt-28 lg:pl-[35%] px-5 lg:mx-40 justify-center text-gray-400">
+			<h2 class="text-3xl font-bold">Experience</h2>
+			<div class="group pt-8 space-y-5">
+				<ExperienceCard
+					title="Software Development Engineer"
+					company="Amazon" link="https://www.aboutamazon.com/about-us"
+					length="Aug 2024 -- PRESENT"
+					desc="I developed a method for creating fulfillment metrics dashboards, cutting development time by 50%. I also led the migration of legacy dashboards to a new stack, retiring vulnerable software. By fixing key UI bugs, I improved the platform’s mobile user experience. Additionally, I deployed new services using AWS Lambda, DynamoDB, S3, and Athena."
+				>
+					<SkillTag skill="TypeScript" />
+					<SkillTag skill="NestJS" />
+					<SkillTag skill="SCSS" />
+					<SkillTag skill="ReactJS"/>
+					<SkillTag skill="REST APIs"/>
+					<SkillTag skill="AWS Lambda" />
+					<SkillTag skill="AWS DynamoDB" />
+					<SkillTag skill="AWS Athena" />
+					<SkillTag skill="AWS S3"/>
+					<SkillTag skill="MySQL"/>
+					<SkillTag skill="Jira"/>
+					<SkillTag skill="Unit-Testing"/>
+				</ExperienceCard>
+				<ExperienceCard
+					title="Full-Stack Developer"
+					company="Bluedrop ISM"
+					link="https://bluedropism.com/"
+					length="Jan 2022 -- Apr 2024"
+					desc="I developed a metrics and telemetry system that reduced bug diagnosis time by 25%. I led a major platform refactor, eliminating 200 vulnerabilities and ensuring security and stability. Additionally, I created a feature allowing organization admins to customize links to match their privacy policies and terms of service. I also demonstrated expertise in deploying new web services with seamless integration, utilizing containerization technologies like Docker and Kubernetes." 
+				>
+					<SkillTag skill="JavaScript"/>
+					<SkillTag skill="TypeScript"/>
+					<SkillTag skill="NodeJS"/>
+					<SkillTag skill="REST APIs"/>
+					<SkillTag skill="ReactJS"/>
+					<SkillTag skill="AngularJS"/>
+					<SkillTag skill="PostgreSQL"/>
+					<SkillTag skill="Unit-Testing"/>
+					<SkillTag skill="Jira"/>
+					<SkillTag skill="GitHub"/>
+				</ExperienceCard>
+				<ExperienceCard
+					title="Software Team Lead"
+					company="Memorial Baja"
+					link="https://memorialbaja.ca/"
+					length="Dec 2022 -- PRESENT"
+					desc="I developed a digital gauge cluster for the team’s vehicle, providing clear and accurate diagnostics to the driver. Additionally, I mentored junior students in software development and embedded systems, focusing on the C programming language."
+				>
+					<SkillTag skill="JavaScript"/>
+					<SkillTag skill="ReactJS"/>
+					<SkillTag skill="AstroJS"/>
+					<SkillTag skill="TailwindCSS"/>
+					<SkillTag skill="C"/>
+					<SkillTag skill="OpenGL"/>
+					<SkillTag skill="RayLib"/>
+					<SkillTag skill="RaspberryPi"/>
+					<SkillTag skill="GitHub"/>
+				</ExperienceCard>
+				<ExperienceCard
+					title="Software Team Member (MCS)"
+					company="MUNStar-1"
+					link="https://munstar-1.com/"
+					length="Aug 2023 -- PRESENT"
+					desc="I am developing a FreeRTOS-based operating system for the team’s satellite, managing its subsystems effectively. I am also architecting CI/CD pipelines to ensure efficient testing and deployment of the satellite's software."
+				>
+					<SkillTag skill="JavaScript"/>
+					<SkillTag skill="ReactJS"/>
+					<SkillTag skill="AstroJS"/>
+					<SkillTag skill="TailwindCSS"/>
+					<SkillTag skill="C"/>
+					<SkillTag skill="Linux"/>
+					<SkillTag skill="Yocto"/>
+				</ExperienceCard>
+			</div>
+			<div class="group mt-8 flex space-x-1 items-center">
+				<a href="https://liam-earle.github.io/resume/" target=”_blank” class="text-white hover:text-cyan-500 pl-5">
+					View Full Resume
+				</a>
+				<MoveUpRight className="ease-in-out duration-150 group-hover:top-1/2 group-hover:left-1/4 group-hover:transform group-hover:translate-x-1/4 group-hover:-translate-y-1/4 group-hover:text-cyan-500" size={15} strokeWidth={3} />
+			</div>
+		</div>
+		<div id="projects" class="pt-28 lg:pl-[35%] px-5 lg:mx-40 justify-center text-gray-400">
+			<h2 class="text-3xl font-bold">Projects</h2>
+			<div class="group pt-8 space-y-5">
+				<ExperienceCard
+					title="Copper"
+					image={copper}
+					desc="Copper is a platform that allows users to create and join chat rooms to communicate with others. It is a combination of Discord and Instagram with some features from other platforms included."
+				>
+					<SkillTag skill="TypeScript"/>
+					<SkillTag skill="ReactJS"/>
+					<SkillTag skill="Remix"/>
+					<SkillTag skill="ExpressJS"/>
+					<SkillTag skill="JWT"/>
+					<SkillTag skill="REST APIs"/>
+					<SkillTag skill="SQLite"/>
+					<SkillTag skill="GitHub"/>
+				</ExperienceCard>
+				<ExperienceCard
+					title="Retrievium"
+					link="https://retrievium.ca/"
+					image={retrievium}
+					desc="Retrievium is a data-management and modeling platform for predictive analytics in chemical sciences - the GitHub of chemistry. It allows you to share, search, and discover research data in various fields of chemistry. Unlike traditional data management or molecular modeling tools, the platform harnesses a global network of users, data, and machine-learning technology that allows people to discover, apply, or develop high-accuracy models quickly." 
+				>
+					<SkillTag skill="TypeScript"/>
+					<SkillTag skill="ReactJS"/>
+					<SkillTag skill="RemixJS"/>
+					<SkillTag skill="Python"/>
+					<SkillTag skill="FastAPI"/>
+					<SkillTag skill="REST APIs"/>
+					<SkillTag skill="PostgreSQL"/>
+					<SkillTag skill="GitHub"/>
+				</ExperienceCard>
+				<ExperienceCard
+					title="Baja Dash"
+					link="https://memorialbaja.ca/"
+					image={bajaDash}
+					desc="I developed a digital gauge cluster for the team’s vehicle, providing clear and accurate diagnostics to the driver. Additionally, I mentored junior students in software development and embedded systems, focusing on the C programming language."
+				>
+					<SkillTag skill="C"/>
+					<SkillTag skill="OpenGL"/>
+					<SkillTag skill="RayLib"/>
+					<SkillTag skill="RaspberryPi"/>
+					<SkillTag skill="GitHub"/>
+				</ExperienceCard>
+			</div>
+		</div>
+		<div id="footer" class="lg:pl-[35%] px-12 py-20 text-center text-gray-400 text-sm">
+			Created with <a class="text-white hover:text-cyan-500" href="https://astro.build">Astro</a> and <a class="text-white hover:text-cyan-500" href="https://tailwindcss.com">Tailwind CSS</a>. Thanks for reading!
+		</div>
+	</body>
+</html>

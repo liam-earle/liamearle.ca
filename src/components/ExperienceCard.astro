@@ -1,0 +1,19 @@
+---
+const { title, company, link, desc, length, image } = Astro.props;
+---
+<div class="ease-in-out duration-150 flex lg:flex-row flex-col w-full border-t border-t-white/0 hover:bg-gray-600/50 hover:border-t-gray-500/50 rounded-md hover:!opacity-100 group-hover:opacity-50 pointer-events-auto">
+	<div class="flex flex-col text-nowrap h-full pl-5 pt-5 text-gray-500 text-xs">
+		{image ? <img class="lg:max-w-[136px]" src={image.src} /> : length}
+	</div>
+	<div class="py-3 pl-5">
+		<a href={link} target=”_blank” class="text-lg font-bold hover:text-cyan-500">
+			{title} {company ? "•" : ""} {company}
+		</a>
+		<div class="text-gray-400 py-3 text-sm">
+			{desc}
+		</div>
+		<div class="flex flex-wrap">
+			<slot />
+		</div>
+	</div>
+</div>
