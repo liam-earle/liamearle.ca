@@ -8,6 +8,9 @@ import { Github, Linkedin, MoveUpRight } from "lucide-react";
 import copper from "../content/copper.png";
 import retrievium from "../content/retrievium.png";
 import bajaDash from "../content/baja.png";
+import experience from "../content/experience.json";
+import projects from "../content/projects.json";
+const images = { copper, retrievium, bajaDash };
 ---
 
 <html lang="en" class="text-white font-roboto scroll-smooth">
@@ -58,75 +61,19 @@ import bajaDash from "../content/baja.png";
 		<div id="experience" class="pt-28 lg:pl-[35%] px-5 lg:mx-40 justify-center text-gray-400">
 			<h2 class="text-3xl font-bold">Experience</h2>
 			<div class="group pt-8 space-y-5">
-				<ExperienceCard
-					title="Software Development Engineer"
-					company="Amazon" link="https://www.aboutamazon.com/about-us"
-					length="Aug 2024 -- Dec 2024, May 2025 -- Aug 2025"
-					desc="I led development of a new reporting application for robotic warehouse shelves and took ownership of the team’s front-end projects, ensuring improved design, stability, and functionality. I architected a streamlined method for building fulfillment metrics dashboards, reducing development time by 50%. I also led the migration of legacy dashboards to a modern stack, contributing to the retirement of vulnerable software. Additionally, I deployed new backend services leveraging AWS Lambda, DynamoDB, S3, and Athena."
-				>
-					<SkillTag skill="TypeScript" />
-					<SkillTag skill="NestJS" />
-					<SkillTag skill="SCSS" />
-					<SkillTag skill="ReactJS"/>
-					<SkillTag skill="REST APIs"/>
-					<SkillTag skill="AWS Lambda" />
-					<SkillTag skill="AWS DynamoDB" />
-					<SkillTag skill="AWS Athena" />
-					<SkillTag skill="AWS S3"/>
-					<SkillTag skill="MySQL"/>
-					<SkillTag skill="Jira"/>
-					<SkillTag skill="Unit-Testing"/>
-				</ExperienceCard>
-				<ExperienceCard
-					title="Full-Stack Developer"
-					company="Bluedrop ISM"
-					link="https://bluedropism.com/"
-					length="Jan 2022 -- Apr 2024"
-					desc="I developed a metrics and telemetry system that reduced bug diagnosis time by 25%. I led a major platform refactor, eliminating 200 vulnerabilities and ensuring security and stability. Additionally, I created a feature allowing organization admins to customize links to match their privacy policies and terms of service. I also demonstrated expertise in deploying new web services with seamless integration, utilizing containerization technologies like Docker and Kubernetes." 
-				>
-					<SkillTag skill="JavaScript"/>
-					<SkillTag skill="TypeScript"/>
-					<SkillTag skill="NodeJS"/>
-					<SkillTag skill="REST APIs"/>
-					<SkillTag skill="ReactJS"/>
-					<SkillTag skill="AngularJS"/>
-					<SkillTag skill="PostgreSQL"/>
-					<SkillTag skill="Unit-Testing"/>
-					<SkillTag skill="Jira"/>
-					<SkillTag skill="GitHub"/>
-				</ExperienceCard>
-				<ExperienceCard
-					title="Software Team Lead"
-					company="Memorial Baja"
-					link="https://memorialbaja.ca/"
-					length="Dec 2022 -- PRESENT"
-					desc="I developed a digital gauge cluster for the team’s vehicle, providing clear and accurate diagnostics to the driver. Additionally, I mentored junior students in software development and embedded systems, focusing on the C programming language."
-				>
-					<SkillTag skill="JavaScript"/>
-					<SkillTag skill="ReactJS"/>
-					<SkillTag skill="AstroJS"/>
-					<SkillTag skill="TailwindCSS"/>
-					<SkillTag skill="C"/>
-					<SkillTag skill="OpenGL"/>
-					<SkillTag skill="RayLib"/>
-					<SkillTag skill="RaspberryPi"/>
-					<SkillTag skill="GitHub"/>
-				</ExperienceCard>
-				<ExperienceCard
-					title="Software Team Member (MCS)"
-					company="MUNStar-1"
-					link="https://munstar-1.com/"
-					length="Aug 2023 -- PRESENT"
-					desc="I am developing a FreeRTOS-based operating system for the team’s satellite, managing its subsystems effectively. I am also architecting CI/CD pipelines to ensure efficient testing and deployment of the satellite's software."
-				>
-					<SkillTag skill="JavaScript"/>
-					<SkillTag skill="ReactJS"/>
-					<SkillTag skill="AstroJS"/>
-					<SkillTag skill="TailwindCSS"/>
-					<SkillTag skill="C"/>
-					<SkillTag skill="Linux"/>
-					<SkillTag skill="FreeRTOS"/>
-				</ExperienceCard>
+				{experience.map((e) => (
+					<ExperienceCard
+						title={e.title}
+						company={e.company}
+						link={e.link}
+						length={e.length}
+						desc={e.desc}
+					>
+						{e.skills.map((s) => (
+							<SkillTag skill={s} />
+						))}
+					</ExperienceCard>
+				))}
 			</div>
 			<div class="group mt-8 flex space-x-1 items-center">
 				<a href="https://liam-earle.github.io/resume/" target=”_blank” class="text-white hover:text-cyan-500 pl-5">
@@ -138,47 +85,18 @@ import bajaDash from "../content/baja.png";
 		<div id="projects" class="pt-28 lg:pl-[35%] px-5 lg:mx-40 justify-center text-gray-400">
 			<h2 class="text-3xl font-bold">Projects</h2>
 			<div class="group pt-8 space-y-5">
-				<ExperienceCard
-					title="Copper"
-					image={copper}
-					desc="Copper is a platform that allows users to create and join chat rooms to communicate with others. It is a combination of Discord and Instagram with some features from other platforms included."
-				>
-					<SkillTag skill="TypeScript"/>
-					<SkillTag skill="ReactJS"/>
-					<SkillTag skill="Remix"/>
-					<SkillTag skill="ExpressJS"/>
-					<SkillTag skill="JWT"/>
-					<SkillTag skill="REST APIs"/>
-					<SkillTag skill="SQLite"/>
-					<SkillTag skill="GitHub"/>
-				</ExperienceCard>
-				<ExperienceCard
-					title="Retrievium"
-					link="https://retrievium.ca/"
-					image={retrievium}
-					desc="Retrievium is a data-management and modeling platform for predictive analytics in chemical sciences - the GitHub of chemistry. It allows you to share, search, and discover research data in various fields of chemistry. Unlike traditional data management or molecular modeling tools, the platform harnesses a global network of users, data, and machine-learning technology that allows people to discover, apply, or develop high-accuracy models quickly." 
-				>
-					<SkillTag skill="TypeScript"/>
-					<SkillTag skill="ReactJS"/>
-					<SkillTag skill="RemixJS"/>
-					<SkillTag skill="Python"/>
-					<SkillTag skill="FastAPI"/>
-					<SkillTag skill="REST APIs"/>
-					<SkillTag skill="PostgreSQL"/>
-					<SkillTag skill="GitHub"/>
-				</ExperienceCard>
-				<ExperienceCard
-					title="Baja Dash"
-					link="https://memorialbaja.ca/"
-					image={bajaDash}
-					desc="I developed a digital gauge cluster for the team’s vehicle, providing clear and accurate diagnostics to the driver. Additionally, I mentored junior students in software development and embedded systems, focusing on the C programming language."
-				>
-					<SkillTag skill="C"/>
-					<SkillTag skill="OpenGL"/>
-					<SkillTag skill="RayLib"/>
-					<SkillTag skill="RaspberryPi"/>
-					<SkillTag skill="GitHub"/>
-				</ExperienceCard>
+				{projects.map((p) => (
+					<ExperienceCard
+						title={p.title}
+						link={p.link}
+						image={images[p.image]}
+						desc={p.desc}
+					>
+						{p.skills.map((s) => (
+							<SkillTag skill={s} />
+						))}
+					</ExperienceCard>
+				))}
 			</div>
 		</div>
 		<div id="footer" class="lg:pl-[35%] px-12 py-20 text-center text-gray-400 text-sm">

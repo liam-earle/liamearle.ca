@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Copper",
+    "image": "copper",
+    "desc": "Copper is a platform that allows users to create and join chat rooms to communicate with others. It is a combination of Discord and Instagram with some features from other platforms included.",
+    "skills": ["TypeScript","ReactJS","Remix","ExpressJS","JWT","REST APIs","SQLite","GitHub"]
+  },
+  {
+    "title": "Retrievium",
+    "link": "https://retrievium.ca/",
+    "image": "retrievium",
+    "desc": "Retrievium is a data-management and modeling platform for predictive analytics in chemical sciences - the GitHub of chemistry. It allows you to share, search, and discover research data in various fields of chemistry.",
+    "skills": ["TypeScript","ReactJS","RemixJS","Python","FastAPI","REST APIs","PostgreSQL","GitHub"]
+  },
+  {
+    "title": "Baja Dash",
+    "link": "https://memorialbaja.ca/",
+    "image": "bajaDash",
+    "desc": "I developed a digital gauge cluster for the team’s vehicle, providing clear and accurate diagnostics to the driver. Additionally, I mentored junior students in software development and embedded systems, focusing on the C programming language.",
+    "skills": ["C","OpenGL","RayLib","RaspberryPi","GitHub"]
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "title": "Software Development Engineer",
+    "company": "Amazon",
+    "link": "https://www.aboutamazon.com/about-us",
+    "length": "May 2025 -- Aug 2025, Aug 2024 -- Dec 2024",
+    "desc": "I led development of a new reporting application for robotic warehouse shelves and took ownership of the team’s front-end projects, ensuring improved design, stability, and functionality. I architected a streamlined method for building fulfillment metrics dashboards, reducing development time by 50%. I also led the migration of legacy dashboards to a modern stack, contributing to the retirement of vulnerable software. Additionally, I deployed new backend services leveraging AWS Lambda, DynamoDB, S3, and Athena.",
+    "skills": [
+      "TypeScript",
+      "Java",
+      "NestJS",
+      "SCSS",
+      "ReactJS",
+      "REST APIs",
+      "AWS Lambda",
+      "AWS DynamoDB",
+      "AWS Athena",
+      "AWS S3",
+      "AWS SNS",
+      "AWS CDK",
+      "MySQL",
+      "Jira",
+      "Unit-Testing"
+    ]
+  },
+  {
+    "title": "Full-Stack Developer",
+    "company": "Bluedrop ISM",
+    "link": "https://bluedropism.com/",
+    "length": "Jan 2022 -- Apr 2024",
+    "desc": "I developed a metrics and telemetry system that reduced bug diagnosis time by 25%. I led a major platform refactor, eliminating 200 vulnerabilities and ensuring security and stability. Additionally, I created a feature allowing organization admins to customize links to match their privacy policies and terms of service. I also demonstrated expertise in deploying new web services with seamless integration, utilizing containerization technologies like Docker and Kubernetes.",
+    "skills": [
+      "JavaScript",
+      "TypeScript",
+      "NodeJS",
+      "REST APIs",
+      "ReactJS",
+      "AngularJS",
+      "PostgreSQL",
+      "Unit-Testing",
+      "Jira",
+      "GitHub"
+    ]
+  },
+  {
+    "title": "Software Team Lead",
+    "company": "Memorial Baja",
+    "link": "https://memorialbaja.ca/",
+    "length": "Dec 2022 -- PRESENT",
+    "desc": "I developed a digital gauge cluster for the team’s vehicle, providing clear and accurate diagnostics to the driver. Additionally, I mentored junior students in software development and embedded systems, focusing on the C programming language.",
+    "skills": [
+      "JavaScript",
+      "ReactJS",
+      "AstroJS",
+      "TailwindCSS",
+      "C",
+      "OpenGL",
+      "RayLib",
+      "RaspberryPi",
+      "GitHub"
+    ]
+  },
+  {
+    "title": "Software Team Member (MCS)",
+    "company": "MUNStar-1",
+    "link": "https://munstar-1.com/",
+    "length": "Aug 2023 -- PRESENT",
+    "desc": "I am developing a FreeRTOS-based operating system for the team’s satellite, managing its subsystems effectively. I am also architecting CI/CD pipelines to ensure efficient testing and deployment of the satellite's software.",
+    "skills": [
+      "JavaScript",
+      "ReactJS",
+      "AstroJS",
+      "TailwindCSS",
+      "C",
+      "Linux",
+      "FreeRTOS"
+    ]
+  }
+]
