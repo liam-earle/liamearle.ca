@@ -1,9 +1,29 @@
 [
   {
+    "title": "Lead Architect",
+    "company": "OmaScan",
+    "link": "https://omascan.com/",
+    "length": "Nov 2025 -- PRESENT",
+    "desc": "I own the end-to-end architecture of a LiDAR-based occupational therapy platform, spanning AWS infrastructure, NestJS backend services, and Next.js frontend applications from prototype to production. I designed and deployed AWS-native infrastructure using infrastructure-as-code, balancing serverless and containerized services for scalability, security, and cost efficiency. I architected a modular NestJS backend and Prisma-backed data layer, defining service boundaries, API contracts, and data flows for scan ingestion, processing, and analytics. I also led frontend architecture with Next.js, establishing performance-conscious data-fetching patterns and deployment workflows while defining CI/CD pipelines for reliable releases.",
+    "skills": [
+      "TypeScript",
+      "NestJS",
+      "NextJS",
+      "Prisma",
+      "AWS",
+      "AWS Lambda",
+      "AWS ECS Fargate",
+      "Docker",
+      "CI/CD",
+      "Infrastructure as Code",
+      "REST APIs"
+    ]
+  },
+  {
     "title": "Software Development Engineer",
     "company": "Amazon",
     "link": "https://www.aboutamazon.com/about-us",
-    "length": "Jan 2026 -- PRESENT, May 2025 -- Aug 2025, Aug 2024 -- Dec 2024",
+    "length": "Jan 2026 -- Apr 2026, May 2025 -- Aug 2025, Aug 2024 -- Dec 2024",
     "desc": "I led development of a new reporting application for robotic warehouse shelves and took ownership of the team’s front-end projects, ensuring improved design, stability, and functionality. I architected a streamlined method for building fulfillment metrics dashboards, reducing development time by 50%. I also led the migration of legacy dashboards to a modern stack, contributing to the retirement of vulnerable software. Additionally, I deployed new backend services leveraging AWS Lambda, DynamoDB, S3, and Athena.",
     "skills": [
       "TypeScript",
@@ -50,7 +70,7 @@
     "title": "Software Team Lead",
     "company": "Memorial Baja",
     "link": "https://memorialbaja.ca/",
-    "length": "Dec 2022 -- PRESENT",
+    "length": "Dec 2022 -- Dec 2025",
     "desc": "I developed a digital gauge cluster for the team’s vehicle, providing clear and accurate diagnostics to the driver. Additionally, I mentored junior students in software development and embedded systems, focusing on the C programming language.",
     "skills": [
       "JavaScript",
